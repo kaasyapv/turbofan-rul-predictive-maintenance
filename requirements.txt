@@ -1,0 +1,11 @@
+numpy==2.5.3
+pandas==3.0.6
+scikit-learn==1.9.1
+xgboost==3.4.1
+torch==2.14.1
+onnx==1.23.2
+onnxruntime==1.30.0
+fastapi==0.142.2
+uvicorn==0.54.0
+streamlit==1.65.0
+pytest==9.1.1
