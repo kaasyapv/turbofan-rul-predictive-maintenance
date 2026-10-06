@@ -8,6 +8,7 @@ import xgboost as xgb
 from . import data, model
 from .features import features
 from .metrics import clip, report
+from .prep import save
 
 
 def boost(f, y, fv, yv):
@@ -49,7 +50,7 @@ def run(name: str):
     res["spread_error_corr"] = float(np.corrcoef(spread, err)[0, 1])
     print("  lstm ensemble", res["lstm_ensemble"]["rmse"])
 
-    data.save(prep, f"models/{name}/prep.json")
+    save(prep, f"models/{name}/prep.json")
     with open(f"results_{name}.json", "w") as out:
         json.dump(res, out, indent=2)
 

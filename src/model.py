@@ -47,6 +47,6 @@ def val_loss(net, x, y) -> float:
 
 
 @torch.no_grad()
-def predict(net, x) -> "np.ndarray":
+def predict(net, x):
     x = torch.tensor(x, dtype=torch.float32)
     return torch.cat([net(b) for b in x.split(4096)]).numpy() * 125
