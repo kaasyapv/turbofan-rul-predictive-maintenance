@@ -1,0 +1,66 @@
+{
+  "subset": "FD003",
+  "train_engines": 80,
+  "val_engines": 20,
+  "test_engines": 100,
+  "kept_sensors": 16,
+  "baseline": {
+    "rmse": 44.952712144343934,
+    "score": 56276.058471553806,
+    "precision": 0.0,
+    "recall": 0.0
+  },
+  "xgb": {
+    "rmse": 14.987462750905859,
+    "score": 425.20216998593713,
+    "precision": 0.9,
+    "recall": 0.9,
+    "trees": 252
+  },
+  "xgb_raw": {
+    "rmse": 17.286979428128397,
+    "score": 1519.3869782727643,
+    "precision": 0.8947368421052632,
+    "recall": 0.85,
+    "trees": 123
+  },
+  "lstm_seeds": [
+    {
+      "rmse": 14.02993354816526,
+      "score": 334.79532262052237,
+      "precision": 0.9,
+      "recall": 0.9
+    },
+    {
+      "rmse": 15.084451223124574,
+      "score": 388.2432928640564,
+      "precision": 0.9473684210526315,
+      "recall": 0.9
+    },
+    {
+      "rmse": 15.592491364153803,
+      "score": 462.9035745209473,
+      "precision": 0.9473684210526315,
+      "recall": 0.9
+    }
+  ],
+  "lstm_mean": {
+    "rmse": 14.90229204514788,
+    "score": 395.3140633351754,
+    "precision": 0.9315789473684211,
+    "recall": 0.9
+  },
+  "lstm_std": {
+    "rmse": 0.6507857848619518,
+    "score": 52.538417039579194,
+    "precision": 0.022329687826943573,
+    "recall": 0.0
+  },
+  "lstm_ensemble": {
+    "rmse": 14.305372916012733,
+    "score": 352.58079097181997,
+    "precision": 0.9,
+    "recall": 0.9
+  },
+  "spread_error_corr": 0.1823041016265528
+}
